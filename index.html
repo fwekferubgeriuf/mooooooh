@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع حوحايت كلبي 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- خلفية السماء -->
+  <div class="sky-background">
+    <div class="moon"></div>
+    <div class="moon-glow"></div>
+    <div id="stars"></div>
+    <div id="floatingHearts"></div>
+  </div>
+
+  <!-- الشاشة السينمائية الأولى -->
+  <section class="intro-screen" id="introScreen">
+
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+
+      <p class="birthday-small">كل عام وانتي بألف خير 💗</p>
+
+      <h1>حوحايت كلبي</h1>
+
+      <div class="intro-line"></div>
+
+      <button class="enter-button" id="enterButton" type="button" onclick="openSite()">
+        <span>اضغطي</span>
+        <strong>♥</strong>
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- الانتقال السينمائي -->
+  <section class="cinematic-transition" id="cinematicTransition">
+    <div class="cinematic-text" id="cinematicText">
+      هذا شي بسيط الج 💗
+    </div>
+  </section>
+
+
+  <!-- الموقع -->
+  <main class="site" id="site">
+
+    <header class="site-header">
+
+      <div class="header-glass">
+
+        <p class="header-small">إلى حوراء 💗</p>
+
+        <h2>موقع حوحايت كلبي</h2>
+
+        <div class="header-divider"></div>
+
+        <p class="poem">
+          يا حوراءُ، يا قمراً أضاءَ ليَ المدى<br>
+          وبكِ استحالَ العمرُ حبّاً وسُعدا
+        </p>
+
+      </div>
+
+    </header>
+
+
+    <!-- قائمة الأقسام -->
+    <section class="menu-section" id="menuSection">
+
+      <div class="menu-title">
+        <span>✦</span>
+        <h2>رحلة صغيرة إلى حوحايت 💗</h2>
+        <span>✦</span>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid"></div>
+
+    </section>
+
+
+    <!-- صفحة القسم -->
+    <section class="section-view" id="sectionView">
+
+      <div class="section-window">
+
+        <button class="back-button" id="backButton">
+          ← رجوع للأقسام
+        </button>
+
+        <div class="opened-card">
+
+          <div class="opened-icon" id="openedIcon">💗</div>
+
+          <h2 id="openedTitle">البداية</h2>
+
+          <p id="openedDescription">أول كلمة من القلب 💗</p>
+
+
+          <!-- مشغل الأغنية -->
+          <div class="music-player" id="musicPlayer">
+
+            <audio id="songPlayer"></audio>
+
+            <button class="music-play" id="musicPlay">
+              ▶
+            </button>
+
+            <div class="music-info">
+
+              <strong id="musicTitle">أغنية لحوحو 💗</strong>
+
+              <span id="musicTime">00:00 / 00:00</span>
+
+              <div class="progress-area" id="progressArea">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+
+            </div>
+
+            <div class="music-note">♫</div>
+
+          </div>
+
+
+          <div class="section-content" id="sectionContent"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- نافذة الرسالة -->
+  <div class="message-overlay" id="messageOverlay">
+
+    <div class="message-box">
+
+      <button class="close-message" id="closeMessage">
+        ×
+      </button>
+
+      <div id="messageBoxContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
